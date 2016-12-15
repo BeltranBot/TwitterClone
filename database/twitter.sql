@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 15, 2016 at 10:06 PM
+-- Generation Time: Dec 15, 2016 at 10:21 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `twitter`
 --
+CREATE DATABASE IF NOT EXISTS `twitter` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `twitter`;
 
 -- --------------------------------------------------------
 
@@ -26,6 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `tweets`
 --
 
+DROP TABLE IF EXISTS `tweets`;
 CREATE TABLE `tweets` (
   `id` int(11) NOT NULL,
   `body` varchar(255) NOT NULL,
